@@ -1,0 +1,38 @@
+// operators
+// equality operators(==,!=)
+
+.first {
+    margin: 10px !=20px;
+}
+
+// relational operators(<,>,<=,>=)
+.second {
+    padding: 100<30;
+    padding: 1000ms>=1s;
+}
+
+// boolean operator(and,or,not)
+.second {
+    padding: 100>30 and pex=='pex';
+    padding: 100<30 or pex=='pex';
+    padding: not 10 !=100
+}
+
+// string and numeric operator
+$n1:10;
+$v1:2;
+
+.test {
+    padding: $n1+px;
+    padding: $n1/$v1+px;
+    padding: $n1*$v1+px;
+}
+
+// interpolation in sass #{}
+@mixin margin($posi, $unit) {
+    margin-#{$posi}: $unit+px
+}
+
+.test {
+    @include margin(left, 12)
+}

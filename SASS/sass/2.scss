@@ -1,0 +1,27 @@
+// mixins
+
+@mixin back($px,$type,$color) { // add parameters in mixin 
+    border: $px $type $color;
+    height: 200px;
+    width: 200px;
+    background-color: purple;
+    border-radius: 10px;
+}
+@mixin font($fstyle) {
+    font-style: $fstyle;
+    
+}
+@mixin bshadow($top,$left,$blur,$color) {
+    box-shadow: $top $left $blur $color;
+}
+h1 {
+        display: inline-block;
+    
+    @include back(4px,solid,orange)
+    @include font(italic)
+}
+
+#p1 {
+    @include back(4px,solid,orange)
+    @include bshadow(-8px,2px,0,black)
+}

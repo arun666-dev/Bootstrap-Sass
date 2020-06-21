@@ -1,0 +1,19 @@
+.first {
+  margin: true; }
+
+.second {
+  padding: false;
+  padding: true; }
+
+.second {
+  padding: true;
+  padding: true;
+  padding: true; }
+
+.test {
+  padding: 10px;
+  padding: 5px;
+  padding: 20px; }
+
+.test {
+  margin-left: 12px; }

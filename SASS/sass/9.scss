@@ -1,0 +1,52 @@
+// @if condition
+
+$no:3;
+
+p {
+    @if $no>2 {
+        color: blue;
+    }
+
+    @if 2==1 {
+        font-style: italic;
+    }
+
+}
+
+// @else condition
+$no1: 7;
+
+p {
+    @if $no1<5 {
+        color: red;
+    }
+
+    @else if $no1>5 and $no1<=7 {
+        color: grey;
+    }
+
+    @else {
+        color: purple;
+    }
+}
+
+// using mixin
+@mixin color($val) {
+    font-size: $val+px;
+
+    @if $val>0 and $val<10 {
+        color: red;
+    }
+
+    @else if $val>10 and $val<20 {
+        color: orange;
+    }
+
+    @else {
+        color: blue;
+    }
+}
+
+p {
+    @include color(18)
+}

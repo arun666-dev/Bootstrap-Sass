@@ -1,0 +1,49 @@
+// @for loop
+@for $var from 1 through 3 {
+    .list-#{$var} {
+        width: 100px*$var;
+
+    }
+}
+
+// @each loop
+@each $var in (blue red green) {
+    p {
+        color: $var;
+    }
+}
+
+//  using multi list
+$li:(p1, arial, red, ),
+(p2, roboto, blue);
+
+@each $sel,
+$style,
+$color in $li {
+    #{$sel} {
+        font-style: $style;
+        color: $color;
+    }
+}
+
+// using map
+$map:(normal:10px, medium:15px, large:20px);
+
+@each $key,
+$val in $map {
+    p {
+        font-weight: $key;
+        font-size: $val;
+    }
+}
+
+// @while loop
+$i:10;
+
+@while $i<=30 {
+    p {
+        padding: 2px+$i;
+    }
+
+    $i:$i+10
+}

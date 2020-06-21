@@ -1,0 +1,14 @@
+    .second, .third {
+  background: green;
+  width: 200px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 20px; }
+
+.second {
+  background: palevioletred;
+  width: 400px; }
+
+.third {
+  background: cornflowerblue;
+  width: 600px; }

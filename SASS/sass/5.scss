@@ -1,0 +1,18 @@
+// sass function
+$wid:200;
+
+// define function
+@function half($width){
+    @return $width/2 +px
+}
+@function one_third($width){
+    @return $width/3 +px
+}
+@function one_fourth($width){
+    @return $width/4 +px
+}
+.test{
+width: half($wid);
+width: one_third($wid);
+width: one_fourth($wid);
+}

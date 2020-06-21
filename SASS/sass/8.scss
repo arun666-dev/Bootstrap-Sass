@@ -1,0 +1,56 @@
+// content directive
+@mixin name($val) {
+    border-width: $val;
+    margin: $val;
+    padding: $val;
+    @content;
+}
+
+@mixin cont {
+    @content;
+}
+
+.test {
+    @include cont {
+        border-radius: 3px;
+    }
+}
+
+.test {
+    @include name(5px) {
+        border-style: solid;
+    }
+}
+
+// @media directives
+.cont {
+    width: 800px;
+
+    @media screen and (max-width:1220px) {
+        width: 700px;
+    }
+
+    @media screen and (max-width:1000px) {
+        width: 500px;
+    }
+
+}
+
+// @at-root
+.test {
+    color: purple;
+
+    @at-root {
+        .test1 {
+            width: 100px;
+
+            .test2 {
+                margin: 20px;
+            }
+        }
+
+        .test3 {
+            color: green;
+        }
+    }
+}

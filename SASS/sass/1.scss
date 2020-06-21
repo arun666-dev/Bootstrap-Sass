@@ -1,0 +1,15 @@
+// partial and import
+
+@import "id";
+
+h3{
+    color: red;
+}
+ul {
+    background: burlywood;
+
+    li {
+        color: chartreuse;
+        font-style: italic;
+    }
+}

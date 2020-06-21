@@ -1,0 +1,46 @@
+.list-1 {
+  width: 100px; }
+
+.list-2 {
+  width: 200px; }
+
+.list-3 {
+  width: 300px; }
+
+p {
+  color: blue; }
+
+p {
+  color: red; }
+
+p {
+  color: green; }
+
+p1 {
+  font-style: arial;
+  color: red; }
+
+p2 {
+  font-style: roboto;
+  color: blue; }
+
+p {
+  font-weight: normal;
+  font-size: 10px; }
+
+p {
+  font-weight: medium;
+  font-size: 15px; }
+
+p {
+  font-weight: large;
+  font-size: 20px; }
+
+p {
+  padding: 12px; }
+
+p {
+  padding: 22px; }
+
+p {
+  padding: 32px; }

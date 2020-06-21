@@ -1,0 +1,78 @@
+// // // color functions
+// // $color:red;
+
+// // .first {
+// //     background: darken($color, 30);
+// //     background: lighten($color, 30);
+// //     background: saturate($color, 10);
+// // }
+
+// // // list function
+// // $list:10px,20px,30px;
+// // $list1:[1 2 3];
+
+// // .test {
+// //     padding: length($list);
+// //     padding: nth($list, 1);
+// //     padding: set-nth($list, 1, 100px);
+// //     padding: join($list, $list1);
+// //     padding: set-nth((arial, ubuntu, vardana), 1, roboto);
+// //     padding: join($list, $list1, space);
+// //     padding: append($list1, 4, comma);
+// //     padding: zip($list, $list1);
+// //     padding: index($list, 10px);
+// // padding: list-separator($list);
+// // padding: is-bracketed($list1);
+// // }
+
+// // selector function
+// $sel:selector-nest('div','h3');
+// $sel:selector-nest('ab','&:hover');
+// $sel:selector-append('ab','_cd');
+// $sel:selector-replace('ab cd','cd','ef');
+// $sel:is-superselector('a','a.active');
+// $sel:simple-selectors('a.abc');
+
+// #{$sel}{
+//     padding: 10px;
+// }
+
+// map function
+
+$font:('reg':100, 'med':200, 'lar':300);
+$font1:('bold':500);
+$merge:map-merge($font, $font1);
+$merge:map-remove($font, 'med');
+
+.test {
+    font-size: map-get($font, "med");
+    font-size: map-keys($font);
+    font-size: map-values($font);
+    font-size: map-keys($merge);
+    font-size: map-has-key($font, 'med');
+}
+
+// introspection function
+$no: 10;
+
+$li: 10 20;
+$map: ('reg':100, 'med':200);
+
+@mixin nm {
+    margin: 10px;
+}
+
+@function fu {
+    @return 'shah'
+}
+
+.test {
+    $num: 20;
+    $var: 'modi';
+    padding: variable-exists(li);
+    padding: global-variable-exists(no);
+    padding: mixin-exists(nm);
+    padding: function-exists(fu);
+    padding: type-of($no);
+    padding: inspect($no);
+}

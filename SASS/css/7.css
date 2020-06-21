@@ -1,0 +1,14 @@
+.test {
+  font-size: 200;
+  font-size: "reg", "med", "lar";
+  font-size: 100, 200, 300;
+  font-size: "reg", "lar";
+  font-size: true; }
+
+.test {
+  padding: true;
+  padding: true;
+  padding: true;
+  padding: true;
+  padding: number;
+  padding: 10; }

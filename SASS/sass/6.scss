@@ -1,0 +1,27 @@
+// // number functions
+// .test{
+//     margin:abs(-2);
+//     margin:ceil(4.1);
+//     margin:floor(4.1);
+//     margin:round(4.5);
+//     margin:max(10,5);
+//     margin:min(10,5);
+//     margin:percentage(.1);
+//     margin:comparable(2px,2em);
+//     margin:random(100);
+//     margin:unit(100px);
+//     margin:unitless(100);
+// }
+
+// string functions
+.test{
+    font-family: quote(ubuntu);
+    font-family: unquote('ubuntu');
+    font-family: to-upper-case('ubuntu');
+    font-family: to-lower-case('ubUNTU');
+    font-family: str-length('ubUNTU,j lskdhvs ');
+    font-family: str-index('ubUNTU,j lskdhvs ','b');
+    font-family: str-insert('ubUNTU,j lskdhvs ','b',11);
+    font-family: str-slice('ubUNTU,j lskdhvs ',11,13);
+    font-family: unique-id();
+}   

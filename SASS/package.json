@@ -1,0 +1,16 @@
+{
+  "name": "sasstut",
+  "version": "1.0.0",
+  "description": "sass tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch sass -o css"
+
+  },
+  "author": "arun",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
